@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DoNhietDo</string>
+
+        <string name="username">Nhóm 6</string>
+        <string name="temperature_value">95.03°F</string>
+        <string name="humidity_value">Humidity: 60%</string>
+        <string name="high_temp">103°</string>
+        <string name="highest">Highest</string>
+        <string name="time_above">14 min</string>
+        <string name="above_threshold">Above 99.5°F</string>
+        <string name="light_toggle">Bật đèn</string>
+</resources>
