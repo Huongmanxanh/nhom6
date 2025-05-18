@@ -1,7 +1,3 @@
-Dưới đây là phiên bản **README đã được sửa lại** theo yêu cầu của bạn — sử dụng **ESP32 + DHT11 + 2 LEDs**, trong đó:
-
-* **1 đèn LED dùng để cảnh báo khi nhiệt độ > 35°C**
-* **1 đèn LED nhận tín hiệu điều khiển từ Firebase qua ứng dụng di động**
 
 ---
 
