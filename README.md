@@ -1,4 +1,7 @@
+Dưới đây là phiên bản **README đã được sửa lại** theo yêu cầu của bạn — sử dụng **ESP32 + DHT11 + 2 LEDs**, trong đó:
 
+* **1 đèn LED dùng để cảnh báo khi nhiệt độ > 35°C**
+* **1 đèn LED nhận tín hiệu điều khiển từ Firebase qua ứng dụng di động**
 
 ---
 
@@ -8,8 +11,9 @@ This project demonstrates how to use an ESP32 microcontroller to:
 
 * 📡 Read temperature and humidity from a **DHT11** sensor
 * 🔄 Send sensor data to **Firebase Realtime Database**
-* 💡 Receive control signals from Firebase to control **2 LEDs**
-* 📱 Control LEDs using a **custom Android mobile app**
+* 🚨 Automatically turn on **1 LED as a warning** when the temperature exceeds 35°C
+* 💡 Receive control signals from Firebase to toggle **1 LED remotely**
+* 📱 Control the LED using a **custom Android mobile app**
 
 ---
 
@@ -28,8 +32,8 @@ This project demonstrates how to use an ESP32 microcontroller to:
 | Component    | ESP32 GPIO |
 | ------------ | ---------- |
 | DHT11 (Data) | GPIO 4     |
-| LED 1        | GPIO 5     |
-| LED 2        | GPIO 19    |
+| Warning LED  | GPIO 5     |
+| Remote LED   | GPIO 19    |
 
 ---
 
@@ -48,8 +52,6 @@ This project demonstrates how to use an ESP32 microcontroller to:
      * `Adafruit Unified Sensor`
 
 ---
-
-## 📄 Arduino Code Snippet
 
 
 ## 📲 Android Studio Setup
@@ -95,15 +97,13 @@ classpath 'com.google.gms:google-services:4.4.1'
 
 ```json
 {
-  "sensor": {
-    "temperature": 23.4,
-    "humidity": 45.2
-  },
-  "leds": {
-    "led1": true,
-    "led2": false
+  "esp32": {
+    "temperature": 33.8,
+    "humidity": 68,
+    "light": "ON"
   }
 }
+
 ```
 
 ---
@@ -111,7 +111,8 @@ classpath 'com.google.gms:google-services:4.4.1'
 ## ✅ Features
 
 * Real-time monitoring of temperature & humidity on mobile app
-* Remote LED control through Firebase Realtime Database
+* Automatic warning LED when temperature > 35°C
+* Remote control of 1 LED via Firebase and Android app
 * Simple, scalable codebase for future expansion
 
 ---
@@ -129,8 +130,5 @@ classpath 'com.google.gms:google-services:4.4.1'
 }
 ```
 
-> **⚠️ Warning:** Do not use these rules in production.
 
----
 
-Let me know if you'd like a sample Android Java/Kotlin UI layout or Firebase code to match!
