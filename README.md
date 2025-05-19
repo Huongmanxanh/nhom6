@@ -8,7 +8,6 @@ This project demonstrates how to use an ESP32 microcontroller to:
 * 📡 Read temperature and humidity from a **DHT11** sensor
 * 🔄 Send sensor data to **Firebase Realtime Database**
 * 🚨 Automatically turn on **1 LED as a warning** when the temperature exceeds 35°C
-* 💡 Receive control signals from Firebase to toggle **1 LED remotely**
 * 📱 Control the LED using a **custom Android mobile app**
 
 ---
@@ -67,27 +66,6 @@ This project demonstrates how to use an ESP32 microcontroller to:
 * Accept changes to `build.gradle`
 
 ### 3. Dependencies (Manual if Needed)
-
-In `app/build.gradle`:
-
-```gradle
-implementation 'com.google.firebase:firebase-database:20.3.0'
-implementation 'com.google.firebase:firebase-auth:22.3.1'
-```
-
-At the bottom:
-
-```gradle
-apply plugin: 'com.google.gms.google-services'
-```
-
-In `build.gradle (Project)`:
-
-```gradle
-classpath 'com.google.gms:google-services:4.4.1'
-```
-
----
 
 ## 🖼️ Firebase Database Structure Example
 
