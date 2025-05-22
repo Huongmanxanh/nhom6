@@ -3,16 +3,22 @@
 
 # ESP32 + DHT11 + 2 LEDs with Firebase Realtime Database and Mobile App Control
 
+##  Video Demo
+
+https://github.com/user-attachments/assets/da39e4f1-da4a-4ed5-a6ae-e471adabda53
+
 This project demonstrates how to use an ESP32 microcontroller to:
 
-* 📡 Read temperature and humidity from a **DHT11** sensor
-* 🔄 Send sensor data to **Firebase Realtime Database**
-* 🚨 Automatically turn on **1 LED as a warning** when the temperature exceeds 35°C
-* 📱 Control the LED using a **custom Android mobile app**
+*  Read temperature and humidity from a **DHT11** sensor
+*  Send sensor data to **Firebase Realtime Database**
+*  Automatically turn on **1 LED as a warning** when the temperature exceeds 35°C
+*  Control the LED using a **custom Android mobile app**
+
+
 
 ---
 
-## 🔧 Hardware Requirements
+##  Hardware Requirements
 
 * ESP32 development board
 * DHT11 sensor
@@ -22,7 +28,7 @@ This project demonstrates how to use an ESP32 microcontroller to:
 
 ---
 
-## 📷 Wiring Diagram
+##  Wiring Diagram
 
 | Component    | ESP32 GPIO |
 | ------------ | ---------- |
@@ -32,7 +38,7 @@ This project demonstrates how to use an ESP32 microcontroller to:
 
 ---
 
-## ☁️ Firebase Setup
+##  Firebase Setup
 
 1. Create a project in [Firebase Console](https://console.firebase.google.com)
 2. Enable **Email/Password authentication** (Authentication → Sign-in method)
@@ -49,7 +55,7 @@ This project demonstrates how to use an ESP32 microcontroller to:
 ---
 
 
-## 📲 Android Studio Setup
+##  Android Studio Setup
 
 ### 1. Create Android Project
 
@@ -67,7 +73,7 @@ This project demonstrates how to use an ESP32 microcontroller to:
 
 ### 3. Dependencies (Manual if Needed)
 
-## 🖼️ Firebase Database Structure Example
+##  Firebase Database Structure Example
 
 ```json
 {
@@ -82,7 +88,7 @@ This project demonstrates how to use an ESP32 microcontroller to:
 
 ---
 
-## ✅ Features
+##  Features
 
 * Real-time monitoring of temperature & humidity on mobile app
 * Automatic warning LED when temperature > 35°C
@@ -91,7 +97,7 @@ This project demonstrates how to use an ESP32 microcontroller to:
 
 ---
 
-## 📌 Notes
+##  Notes
 
 * Ensure Firebase database rules are set to public (for testing only):
 
