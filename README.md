@@ -3,7 +3,7 @@
 
 # ESP32 + DHT11 + 2 LEDs with Firebase Realtime Database and Mobile App Control
 
-##  Video Demo
+##  Demo Video
 
 https://github.com/user-attachments/assets/da39e4f1-da4a-4ed5-a6ae-e471adabda53
 
